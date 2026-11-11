@@ -17,11 +17,34 @@
         <p>Log in and continue growing.</p>
       </div>
       <div id="login-container">
-        <h2>Log in to your account</h2>
-        <label for="email">Email address</label>
-        <input type="text" value="Enter your email" />
-        <label for="password">Email address</label>
-        <input type="password" value="Enter your password" />
+        <form action="">
+          <h2>Login to your account</h2>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div id="forgot-password"><a href="#">Forgot my password?</a></div>
+
+          <button>Log in</button>
+
+          <div id="sign-in">Don't have an account?<a href="#">Sign in</a></div>
+        </form>
       </div>
     </main>
   </body>

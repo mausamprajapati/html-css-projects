@@ -1,42 +1,106 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
-main{
-    width: 100%;
-    height: 100%;
-    background-image: url(./images/nature\ background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    color: #c4b26e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+main {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/nature\ background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #c4b26e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 8%;
 }
-#text-container{
-    width: 500px;
-    position: absolute;
-    left: 100px;
-    font-size: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+#text-container {
+  width: 500px;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-#login-container{
-    width: 400px;
-    height: 600px;
-    background-color: #c4b26e;
-    color: #47400A;
-    border-radius: 20px;
-    padding: 10px;
-    position: absolute;
-    right: 70px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+#login-container {
+  width: 400px;
+  height: 500px;
+  background-color: #c4b26e;
+  color: #47400a;
+  border-radius: 20px;
+  padding: 30px;
+}
+#login-container h2 {
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 1.8rem;
+  color: black;
+  user-select: none;
+}
+#login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  user-select: none;
+}
+#login-container input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  font-size: 1.1rem;
+  padding-left: 20px;
+  border-radius: 30px;
+  border: none;
+  user-select: none;
+}
+#forgot-password {
+  text-align: end;
+  margin-bottom: 40px;
+  user-select: none;
+}
+#forgot-password a {
+  text-decoration: none;
+  color: black;
+}
+#forgot-password a:hover {
+  color: rgb(74, 2, 208);
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
+  justify-content: center;
+  background-color: #568a00;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button:active {
+  scale: 0.95;
+  background-color: #467101;
+}
+#sign-in {
+  text-align: center;
+  user-select: none;
+}
+#sign-in a {
+  text-decoration: none;
+  color: #568a00;
+  font-weight: 600;
+}
+#sign-in a:active {
+  color: #467101;
 }
