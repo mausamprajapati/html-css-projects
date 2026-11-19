@@ -6,20 +6,20 @@
 html,body{
     width: 100%;
     height: 100%;
-    font-family:  sans-serif;;
+    font-family:  sans-serif;
 }
 #main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 /* Hero-section */
 .hero-section{
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px 1fr 120px;
-
+    margin-bottom: 60px;
 }
 
 /* nav-bar */
@@ -109,6 +109,7 @@ nav{
 .right img{
    width: 90%;
    height: 90%;
+   object-fit: contain;
 }
 
 /* bottom-content */
@@ -126,10 +127,11 @@ nav{
 /* service-section */
 .service-section{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    background-color: antiquewhite;
+    padding-bottom: 40px;
 }
 .service-header{
     width: 100%;
@@ -160,7 +162,6 @@ nav{
 /* service-cards */
 .service-cards{
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -267,13 +268,14 @@ nav{
 }
 .feature{
     width: calc(100% - 120px);
-    height: 40vh;
+    height: auto;
     padding: 40px 60px;
-    margin: 0px 60px;
+    margin: 80px 60px;
     border: none;
     border-radius: 40px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: rgb(238, 238, 238);
 }
 .feature-left{
@@ -301,11 +303,16 @@ nav{
 }
 .feature-right{
     width: 50%;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .feature-right img{
     width: 250px;
     height: 250px;
-    position: absolute;
-    right: 20%;
+}
+.case-study{
+    width: 100%;
+    height: auto;
+    padding: 40px 60px;
 }
