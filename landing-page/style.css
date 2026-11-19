@@ -130,7 +130,6 @@ nav{
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
     padding-bottom: 40px;
 }
 .service-header{
